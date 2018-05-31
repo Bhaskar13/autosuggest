@@ -22,22 +22,18 @@ public class Service {
 	@Autowired
 	ServiceManager serviceManager;
 	
-    @RequestMapping(value = "/search/{name}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<List<Domain>> getAutoSuggest(@PathVariable("name") String seachTerm) {
+    @RequestMapping(value = "/suggest/{name}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<String> getAutoSuggest(@PathVariable("name") String seachTerm) {
     		return serviceManager.getAutoSuggest(seachTerm);
         
     }
     
-    @RequestMapping(value = "/update", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE,produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void> setDomain(@RequestBody Domain domain) {
-    		return serviceManager.setDomain(domain);
+    @RequestMapping(value = "/search/{name}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<String> getSearchResults(@PathVariable("name") String seachTerm) {
+    		return serviceManager.getSearchResults(seachTerm);
+        
     }
-    
-    @RequestMapping(value = "/delete/{name}", method = RequestMethod.DELETE)
-    public ResponseEntity<Void> deleteDomain(@PathVariable("name") String name){
-    		return serviceManager.deleteDomain(name);
-    }
-    
+
     @RequestMapping(value = "/add", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE,produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Domain> addDomain(@RequestBody Domain domain){
     		return serviceManager.addDomain(domain);

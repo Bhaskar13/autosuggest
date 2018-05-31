@@ -1,18 +1,11 @@
 package com.application.entity;
 
-import org.apache.solr.client.solrj.beans.Field;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.solr.core.mapping.Indexed;
-import org.springframework.data.solr.core.mapping.SolrDocument;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
-@SolrDocument(collection = "domain")
 public class Domain {
-	@Id
-	@Field
-    @Indexed(name = "name", type = "string")
+	@JsonProperty
     private String name;
-	
-	@Field
+	@JsonProperty
 	private int rating;
  
     public String getName() {
@@ -31,5 +24,14 @@ public class Domain {
 		this.rating = rating;
 	}
 
+	public Domain() {
+		super();
+	}
+
+	public Domain(String name, int rating) {
+		super();
+		this.name = name;
+		this.rating = rating;
+	}
 
 }
