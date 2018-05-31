@@ -1,0 +1,51 @@
+.custom-container-fluid{
+     padding-left: 5%;
+     padding-right: 5%;
+     padding-top: 30px;
+}
+ #input-container{
+     margin-top: 0px;
+}
+ #search-container{
+     margin-top: 0%;
+     padding-left: 0%;
+}
+#search-container-title{
+     padding-left: 0% 
+}
+ #suggestion-container{
+     margin-top:0px;
+}
+ #search-container-result{
+     margin-top: 30px;
+}
+ .stylish-input-group .input-group-addon{
+     background: white !important;
+}
+ .stylish-input-group .form-control{
+     border-right:0;
+     box-shadow:0 0 0;
+     border-color:#ccc;
+}
+ .stylish-input-group button{
+     border:0;
+     width: 100px;
+}
+ .btn{
+     line-height:2.5 
+}
+
+.no-results-found-text{
+    color: red;
+}
+
+#search-result-title-with-count{
+     display: none;
+}
+
+#search-container-title{
+     margin-top:10px;
+}
+
+ 
+

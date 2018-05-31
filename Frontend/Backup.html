@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="./app.css">
+      <title>Search App</title>
+   </head>
+   <body>
+      <div class="container-fluid custom-container-fluid">
+        <div class="row">
+           <div class="col-6">
+
+            <div id="input-container">
+               <div class="input-group stylish-input-group input-append">
+                  <input type="text" class="form-control"  placeholder="Search" id="search-bar"   oninput="suggest(this.value)"  >
+                  <span class="input-group-addon">
+                  <button type="submit" class="btn btn-primary btn-sm" id="search-button" onclick="search()">
+                  SEARCH
+                  </button>  
+                  </span>
+                  </input>
+               </div>
+            </div>
+
+            <div id="suggestion-container">
+               <ul class="list-group" id="suggestion-result-list">
+               </ul>
+            </div>
+
+            <div id="search-container">
+               <div id="search-container-title">
+                  <h3 id="search-result-title-with-count">Search Results:</h3>
+               </div>
+               <div id="search-container-result">
+                  <ul class="list-group" id="search-result-list">
+                  </ul>
+               </div>
+            </div>
+         </div>
+         
+            
+         
+      </div>
+    </div>
+      <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>-->
+      <script type="text/javascript"  src="app.js"></script>
+   </body>
+   <script></script>
+</html>
