@@ -30,9 +30,9 @@ Check out the demo [here](https://drive.google.com/file/d/1AgxWbhBhWc9WfvNlbqg5o
 * Run Application.java file
 * This will start the backend server and will expose the following api
 
-# Serach  GET : http://localhost:8088/domain/search/face
-# Suggest GET : http://localhost:8088/domain/suggest/bhas
-# Index  POST : curl -X POST \
+### Serach  GET : http://localhost:8088/domain/search/face
+### Suggest GET : http://localhost:8088/domain/suggest/bhas
+### Index  POST : curl -X POST \
   http://localhost:8088/domain/add \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
